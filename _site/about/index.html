@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – Bank of Punjab</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  
+    <link rel="stylesheet" href="/assets/css/about.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body class="default-page">
+  <header class="navbar">
+  <div class="logo">
+    <a href="/">
+      <img src="https://i.postimg.cc/3R96MK4H/FEATURE-IMAGE-2022-05-17-T162650-631-removebg-preview.png" alt="BOP Logo">
+    </a>
+  </div>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about/">About Us</a>
+
+    <div class="dropdown">
+      <span class="dropdown-btn">Products ▾</span>
+      <div class="dropdown-content">
+        <a href="#">PLS Savings</a>
+        <a href="#">Current Account</a>
+        <a href="#">Term Deposits</a>
+      </div>
+    </div>
+
+    <a href="/branches/">Branches</a>
+
+    <div class="dropdown">
+      <span class="dropdown-btn">Services ▾</span>
+      <div class="dropdown-content">
+        <a href="#">Raast</a>
+        <a href="#">Mobile App</a>
+        <a href="#">Remittance</a>
+      </div>
+    </div>
+
+    <a href="/careers/">Careers</a>
+    <a href="/contact/">Contact</a>
+    <span class="toggle-switch" onclick="toggleTheme()">🌓</span>
+  </nav>
+</header>
+
+
+  <main>
+    <p><!-- Main Content --></p>
+<div class="content">
+    <h1>About Us</h1>
+    <p>The Bank of Punjab (BOP) head quartered in BOP tower, Main Boulevard Gulberg, Lahore is one of the prominent financial institutions of the country with PACRA Ratings: AA+ Long Term and A1+ Short Term.</p>
+
+    <div class="info-box">
+      <p>The management of the bank has implemented strategies and policies to carve a distinct position in the market place. Fortified with years of banking expertise and driven by the strategic goals set out by our board of directors and senior management, the bank has invested in revolutionary technology to have an extensive range of products and services. This facilitates our commitment to repay the trust and confidence of our stakeholders, and also to a culture of innovation.</p>
+
+      <p>BOP has emerged as one of the foremost financial institutions in the country, focused on spurring an economic revival by endeavoring to meet the needs of tomorrow as well as today. Our extensive portfolio encompasses all facets of banking.</p>
+
+      <a href="#">► Profile of Company</a>
+      <a href="/governance/">► Governance</a>
+    </div>
+  </div>
+
+<script>
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+    }
+  </script>
+
+
+  </main>
+
+  
+</body>
+</html>

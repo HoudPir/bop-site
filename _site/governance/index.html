@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Governance – Bank of Punjab</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  
+    <link rel="stylesheet" href="/assets/css/governance.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body class="default-page">
+  <header class="navbar">
+  <div class="logo">
+    <a href="/">
+      <img src="https://i.postimg.cc/3R96MK4H/FEATURE-IMAGE-2022-05-17-T162650-631-removebg-preview.png" alt="BOP Logo">
+    </a>
+  </div>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about/">About Us</a>
+
+    <div class="dropdown">
+      <span class="dropdown-btn">Products ▾</span>
+      <div class="dropdown-content">
+        <a href="#">PLS Savings</a>
+        <a href="#">Current Account</a>
+        <a href="#">Term Deposits</a>
+      </div>
+    </div>
+
+    <a href="/branches/">Branches</a>
+
+    <div class="dropdown">
+      <span class="dropdown-btn">Services ▾</span>
+      <div class="dropdown-content">
+        <a href="#">Raast</a>
+        <a href="#">Mobile App</a>
+        <a href="#">Remittance</a>
+      </div>
+    </div>
+
+    <a href="/careers/">Careers</a>
+    <a href="/contact/">Contact</a>
+    <span class="toggle-switch" onclick="toggleTheme()">🌓</span>
+  </nav>
+</header>
+
+
+  <main>
+    <body>
+
+  
+  <!-- Main Content -->
+  <div class="content">
+    <h1>Governance</h1>
+    <div class="info-box">
+      <a href="/BOP-ESG/">BOP’s ESG Vision, Mission Statement, Policy Statement, Green Banking Principles/Objectives</a>
+      <a href="/BOD/">Profile of the Board of Directors</a>
+
+      <div class="info-dropdown" onclick="toggleDropdown(this)">Auditor's Name</div>
+      <div class="expand-content">A.F. Ferguson &amp; Co., Chartered Accountants</div>
+
+      <div class="info-dropdown" onclick="toggleDropdown(this)">Legal Advisors</div>
+      <div class="expand-content">Salim Baig &amp; Associates, 16, 3rd Floor, Imtiaz Plaza, The Mall, Lahore</div>
+
+      <a href="Management.html">Management</a>
+      <a href="#">Code of Conduct for Directors</a>
+      <a href="#">Key Highlights of Board Remuneration Policy 2020</a>
+    </div>
+  </div>
+
+  <!-- Theme + Dropdown Script -->
+  <script>
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+    }
+
+    function toggleDropdown(el) {
+      el.classList.toggle("open");
+    }
+  </script>
+
+</body>
+
+  </main>
+
+  
+</body>
+</html>

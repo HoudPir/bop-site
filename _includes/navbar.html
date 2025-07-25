@@ -1,0 +1,35 @@
+<header class="navbar">
+  <div class="logo">
+    <a href="{{ '/' | relative_url }}">
+      <img src="https://i.postimg.cc/3R96MK4H/FEATURE-IMAGE-2022-05-17-T162650-631-removebg-preview.png" alt="BOP Logo">
+    </a>
+  </div>
+  <nav>
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/about/' | relative_url }}">About Us</a>
+
+    <div class="dropdown">
+      <span class="dropdown-btn">Products ▾</span>
+      <div class="dropdown-content">
+        <a href="#">PLS Savings</a>
+        <a href="#">Current Account</a>
+        <a href="#">Term Deposits</a>
+      </div>
+    </div>
+
+    <a href="{{ '/branches/' | relative_url }}">Branches</a>
+
+    <div class="dropdown">
+      <span class="dropdown-btn">Services ▾</span>
+      <div class="dropdown-content">
+        <a href="#">Raast</a>
+        <a href="#">Mobile App</a>
+        <a href="#">Remittance</a>
+      </div>
+    </div>
+
+    <a href="{{ '/careers/' | relative_url }}">Careers</a>
+    <a href="{{ '/contact/' | relative_url }}">Contact</a>
+    <span class="toggle-switch" onclick="toggleTheme()">🌓</span>
+  </nav>
+</header>

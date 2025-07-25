@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} – Bank of Punjab</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  {% if page.custom_css %}
+    <link rel="stylesheet" href="/assets/css/{{ page.custom_css }}">
+  {% endif %}
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body class="{{ page.page_class | default: 'default-page' }}">
+  {% include navbar.html %}
+
+  <main>
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>

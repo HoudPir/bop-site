@@ -1,0 +1,111 @@
+/* General Typography & Theme */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white;
+  padding: 1rem 3rem;
+  border-bottom: 3px solid #f26522;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #f26522;
+}
+
+/* Banner Buttons */
+.banner-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem auto;
+  flex-wrap: wrap;
+}
+
+.banner-buttons a {
+  background-color: #f26522;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.banner-buttons a:hover {
+  background-color: #d95217;
+}
+
+/* Hero Image */
+.hero {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content Section */
+.content {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.content h1 {
+  color: #f26522;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #f26522;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  width: 100%;
+  margin-top: 2rem;
+}
