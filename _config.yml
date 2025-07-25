@@ -1,0 +1,19 @@
+---
+title: Bank of Punjab
+timezone: UTC
+collections:
+  pages:
+    title: Pages
+    output: true
+    permalink: "/:title/"
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+description: Official Website of the Bank of Punjab
+baseurl: 
+url: https://HOUDBOP.com
+markdown: kramdown
+theme: minima

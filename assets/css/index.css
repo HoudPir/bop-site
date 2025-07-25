@@ -1,0 +1,225 @@
+:root {
+      --primary: #f26522;
+      --bg-light: #ffffff;
+      --text-light: #333333;
+      --bg-dark: #1a1a1a;
+      --text-dark: #f0f0f0;
+      --hover-light: #f2f2f2;
+      --hover-dark: #333333;
+    }
+
+    html[data-theme='light'] {
+      --bg: var(--bg-light);
+      --text: var(--text-light);
+      --hover: var(--hover-light);
+    }
+
+    html[data-theme='dark'] {
+      --bg: var(--bg-dark);
+      --text: var(--text-dark);
+      --hover: var(--hover-dark);
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar {
+      background-color: var(--bg);
+      border-bottom: 3px solid var(--primary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 2rem;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo img {
+      height: 80px;
+    }
+
+    .navbar nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      position: relative;
+    }
+
+    .navbar nav a,
+    .dropdown-btn {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      cursor: pointer;
+      position: relative;
+      padding: 0.5rem;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: var(--bg);
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      z-index: 999;
+      top: 100%;
+      left: 0;
+      padding: 0.5rem 0;
+      border: 1px solid #ddd;
+      min-width: 180px;
+    }
+
+    .dropdown:hover .dropdown-content,
+    .dropdown-content:hover {
+      display: block;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: var(--hover);
+    }
+
+    .top-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin: 1rem 2rem;
+    }
+
+    .top-buttons .btn {
+      background-color: var(--primary);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #e35310;
+    }
+
+    .toggle-switch {
+      margin-left: 1rem;
+      cursor: pointer;
+    }
+
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      font-size: 2rem;
+      padding: 0.6rem 1rem;
+      cursor: pointer;
+      z-index: 2;
+      border-radius: 4px;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    .slideshow-indicators {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+      gap: 0.5rem;
+    }
+
+    .slideshow-indicators button {
+      background-color: #ccc;
+      border: none;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .slideshow-indicators button.active {
+      background-color: var(--primary);
+    }
+
+    .quick-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: var(--bg);
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .quick-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .navbar,
+      .navbar nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      .logo img {
+        height: 60px;
+      }
+    }
