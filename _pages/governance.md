@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Governance
-permalink: /governance/
+permalink: "/governance/"
+layout: default
 custom_css: governance.css
 ---
 

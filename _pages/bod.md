@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Profile of the Board of Directors
-permalink: /bod/
+permalink: "/bod/"
+layout: default
 custom_css: bod.css
 ---
 

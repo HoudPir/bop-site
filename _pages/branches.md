@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Branches
-permalink: /branches/
+permalink: "/branches/"
+layout: default
 custom_css: branches.css
 ---
 

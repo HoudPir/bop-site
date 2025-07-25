@@ -1,10 +1,9 @@
 ---
-layout: default
 title: About Us
-permalink: /about/
+permalink: "/about/"
+layout: default
 custom_css: about.css
 ---
-
 
   <!-- Main Content -->
   <div class="content">

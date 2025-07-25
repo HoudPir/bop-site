@@ -1,7 +1,7 @@
 ---
-layout: default
 title: BOP ESG Vision
-permalink: /bop-esg/
+permalink: "/bop-esg/"
+layout: default
 custom_css: bop-esg.css
 page_class: bop-esg-page
 ---

@@ -1,7 +1,7 @@
 ---
-layout: default
 title: Careers
-permalink: /careers/
+permalink: "/careers/"
+layout: default
 custom_css: careers.css
 ---
 

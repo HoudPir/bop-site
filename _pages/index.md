@@ -1,7 +1,7 @@
 ---
 title: Home
+permalink: "/"
 layout: default
-permalink: /
 custom_css: index.css
 ---
 
