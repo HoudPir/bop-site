@@ -1,6 +1,11 @@
 ---
 title: Bank of Punjab
 timezone: UTC
+description: Official Website of the Bank of Punjab
+baseurl: "/bop-site"
+url: "https://houdpir.github.io"
+markdown: kramdown
+theme: minima
 collections:
   pages:
     title: Pages
