@@ -12,7 +12,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: Official Website of the Bank of Punjab
+description: UnOfficial Website of the Bank of Punjab
 baseurl: 
 url: https://HOUDBOP.com
 markdown: kramdown
